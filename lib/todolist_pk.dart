@@ -1,7 +1,13 @@
-library todolist_pk;
+class Task {
+  final String id;
+  final String name;
+  final DateTime createdAt;
+  final String? location;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
+  const Task ({
+    required this.id,
+    required this.name,
+    required this.createdAt,
+    this.location,
+  });
 }
